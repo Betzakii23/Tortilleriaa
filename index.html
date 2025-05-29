@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Tortillas</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Materialize CSS (solo el CSS, para materialboxed) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+  <!-- Font Awesome (opcional) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Tus estilos personalizados -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/esti.css" />
+
+  <style>
+    .mini-img {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .titulo {
+      font-weight: bold;
+      margin: 30px 0;
+      color: #333;
+    }
+
+    footer {
+      background-color: #c0aa66f6;
+      padding: 5px;
+    }
+
+    footer p {
+      text-align: center;
+      font-family: cursive;
+      font-size: 20px;
+      color: black;
+    }
+
+    .header-img2 th img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <table class="header-img2" align="center" border="0">
+    <tr>
+      <th class="left-h"><img src="img/LogoTortillasP.png" alt="Fondo Tortillería"></th>
+      <th class="right-h"><img src="img/TOR.png" alt="Logo Tortillería"></th>
+    </tr>
+  </table>
+
+  <!-- Menú Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="indexx.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-column flex-lg-row w-100">
+          <li class="nav-item"><a class="nav-link" href="quienesSomos.html">Quiénes somos</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menú</a>
+            <ul class="dropdown-menu bg-dark border-0">
+              <li><a class="dropdown-item text-white" href="Desayunos.html">Desayunos</a></li>
+              <li><a class="dropdown-item text-white" href="Tortillas.html">Tortillas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Horario.html">Horario</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="Ubicacion.html">Ubicación</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Galería -->
+  <main class="container mt-4">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="titulo">GALERÍA DEL NEGOCIO</h1>
+      </div>
+    </div>
+
+    <div class="row galeria center-align g-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/TorNormalAA.png" alt="Tortillas Normales" class="materialboxed img-fluid mini-img" data-caption="Tortillas Normales">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/TortillasAzulesAA.png" alt="Tortillas Azules" class="materialboxed img-fluid mini-img" data-caption="Tortillas Azules">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/TorNormalAA.png" alt="Tortillas Normales" class="materialboxed img-fluid mini-img" data-caption="Tortillas Normales">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/TotAmarrilloAA.png" alt="Tortillas Amarillas" class="materialboxed img-fluid mini-img" data-caption="Tortillas Amarillas">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/memfrijolAA.png" alt="Memelas Frijol Quesillo" class="materialboxed img-fluid mini-img" data-caption="Memelas con frijol y quesillo">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/MemelaHachaAA.png" alt="Memelas con todo" class="materialboxed img-fluid mini-img" data-caption="Memelas con todo">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/Huevos.png" alt="Huevos al comal" class="materialboxed img-fluid mini-img" data-caption="Huevos al comal">
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <br>
+    <p>
+      <i>CONTÁCTANOS EN NUESTRAS REDES SOCIALES:</i><br><br>
+      <a href="https://www.facebook.com/profile.php?id=61568428202144">
+        <img src="img/facebook.png" width="35" height="35" title="Facebook" alt="Facebook" />
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5219514347421&text=%F0%9F%91%8B%20%C2%A1Hola!%20Este%20es%20un%20ejemplo%20de%20un%20mensaje">
+        <img src="img/wa.png" width="35" height="35" title="Whatsapp" alt="Whatsapp" />
+      </a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Inicializar Materialbox -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const elems = document.querySelectorAll('.materialboxed');
+      M.Materialbox.init(elems);
+    });
+  </script>
+</body>
+</html>
